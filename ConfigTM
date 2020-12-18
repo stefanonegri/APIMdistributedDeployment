@@ -1,0 +1,9 @@
+scp /Users/stefanonegri/DistributedAPIM/TM/deployment.toml root@168.119.122.183:/usr/local/wso2
+ssh root@157.90.21.168
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export WSO2_HOME=/usr/local/wso2/wso2am-3.2.0/
+cd $WSO2_HOME/bin
+cd ../repository/conf/
+cp deployment.toml deployment_orig.toml
+mv ../../../deployment.toml .
+cd ../../bin
