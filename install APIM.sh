@@ -8,7 +8,7 @@ scp /Users/stefanonegri/DistributedAPIM/resources/mysql-connector-java-8.0.11.ja
 ssh root@<apim-vm_ip>
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 cd /usr/local/wso2
-wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1eGNb0SybLTbIuSxHZF_N4tEPwk1zPeAZ' -O download.zip
+wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1eGNb0SybLTbIuSxHZF_N4tEPwk1zPeAZ' -O wso2am-3.2.0.zip
 unzip wso2am-3.2.0.zip
 export WSO2_HOME=/usr/local/wso2/wso2am-3.2.0/
 cd $WSO2_HOME/bin
