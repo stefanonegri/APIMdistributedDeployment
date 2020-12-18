@@ -15,10 +15,7 @@ cd $WSO2_HOME/bin
 ./wso2update_linux
 ./wso2update_linux
 mv /usr/local/wso2/mysql-connector-java-8.0.11.jar ../lib
-cd ../repository/conf/
-cp deployment.toml deployment_orig.toml
-mv ../../../deployment.toml .
-cd ../../bin
+
 
 
 
