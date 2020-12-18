@@ -1,0 +1,9 @@
+scp /Users/stefanonegri/DistributedAPI/GTW/deployment.toml root@159.69.108.75:/usr/local/wso2
+ssh root@<apim-vm_ip>
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export WSO2_HOME=/usr/local/wso2/wso2am-3.2.0/
+cd $WSO2_HOME/bin
+cd ../repository/conf/
+cp deployment.toml deployment_orig.toml
+mv ../../../deployment.toml .
+cd ../../bin
