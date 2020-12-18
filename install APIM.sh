@@ -5,7 +5,6 @@ apt-get install zip unzip
 apt install openjdk-8-jre-headless
 exit
 scp /Users/stefanonegri/DistributedAPIM/resources/mysql-connector-java-8.0.11.jar root@168.119.234.86:/usr/local/wso2
-scp /Users/stefanonegri/DistributedAPI/APIM/deployment.toml root@168.119.234.86:/usr/local/wso2
 ssh root@<apim-vm_ip>
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 cd /usr/local/wso2
