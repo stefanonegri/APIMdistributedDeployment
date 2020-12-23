@@ -4,7 +4,7 @@ apt update
 apt-get install zip unzip
 apt install openjdk-8-jre-headless
 exit
-scp /Users/stefanonegri/DistributedAPIM/resources/mysql-connector-java-8.0.11.jar root@$APIM_IP:/usr/local/wso2
+scp $HOME_DIR/resources/mysql-connector-java-8.0.11.jar root@$APIM_IP:/usr/local/wso2
 ssh root@$APIM_IP
 cd /usr/local/wso2
 wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1eGNb0SybLTbIuSxHZF_N4tEPwk1zPeAZ' -O wso2am-3.2.0.zip
