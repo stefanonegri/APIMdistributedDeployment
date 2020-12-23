@@ -1,5 +1,5 @@
-scp /Users/stefanonegri/DistributedAPIM/APIM/deployment_APIM.toml root@$APIM_IP:/usr/local/wso2
-scp /Users/stefanonegri/DistributedAPIM/APIM/env.sh root@$APIM_IP:/usr/local/wso2
+scp $HOME_DIR/APIM/deployment_APIM.toml root@$APIM_IP:/usr/local/wso2
+scp $HOME_DIR/env.sh root@$APIM_IP:/usr/local/wso2
 ssh root@$APIM_IP
 cd /usr/local/wso2
 source env.sh
