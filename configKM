@@ -1,4 +1,4 @@
-scp /Users/stefanonegri/DistributedAPIM/KM/deployment.toml root@157.90.21.168:/usr/local/wso2
+scp $HOME_DIR/KM/deployment.toml root@157.90.21.168:/usr/local/wso2
 ssh root@157.90.21.168
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export WSO2_HOME=/usr/local/wso2/wso2am-3.2.0/
