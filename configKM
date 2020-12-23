@@ -3,7 +3,7 @@ scp $HOME_DIR/env.sh root@$GTW_IP:/usr/local/wso2
 ssh root@$KM_IP
 cd /usr/local/wso2
 source env.sh
-sed -e "s/\${APIM_IP}/$APIM_IP/" -e "s/\${DB_IP}/$DB_IP/" -e "s/\${KM_IP}/$KM_IP/" -e "s/\${TM_IP}/$TM_IP/" -e "s/\${GTW_IP}/$GTW_IP/" deployment_GTW.toml > deployment.toml
+sed -e "s/\${APIM_IP}/$APIM_IP/" -e "s/\${DB_IP}/$DB_IP/" -e "s/\${KM_IP}/$KM_IP/" -e "s/\${TM_IP}/$TM_IP/" -e "s/\${GTW_IP}/$GTW_IP/" deployment_KM.toml > deployment.toml
 cd $WSO2_HOME/bin
 cd ../repository/conf/
 cp deployment.toml deployment_orig.toml
