@@ -1,7 +1,9 @@
-scp $HOME_DIR/KM/deployment.toml root@157.90.21.168:/usr/local/wso2
-ssh root@157.90.21.168
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export WSO2_HOME=/usr/local/wso2/wso2am-3.2.0/
+scp $HOME_DIR/GTW/deployment_KM.toml root@$GTW_IP:/usr/local/wso2
+scp $HOME_DIR/env.sh root@$GTW_IP:/usr/local/wso2
+ssh root@$KM_IP
+cd /usr/local/wso2
+source env.sh
+sed -e "s/\${APIM_IP}/$APIM_IP/" -e "s/\${DB_IP}/$DB_IP/" -e "s/\${KM_IP}/$KM_IP/" -e "s/\${TM_IP}/$TM_IP/" -e "s/\${GTW_IP}/$GTW_IP/" deployment_GTW.toml > deployment.toml
 cd $WSO2_HOME/bin
 cd ../repository/conf/
 cp deployment.toml deployment_orig.toml
