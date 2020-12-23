@@ -1,5 +1,5 @@
-scp /Users/stefanonegri/DistributedAPIM/GTW/deployment_GTW.toml root@$GTW_IP:/usr/local/wso2
-scp /Users/stefanonegri/DistributedAPIM/GTW/env.sh root@$GTW_IP:/usr/local/wso2
+scp $HOME_DIR/GTW/deployment_GTW.toml root@$GTW_IP:/usr/local/wso2
+scp $HOME_DIR/env.sh root@$GTW_IP:/usr/local/wso2
 ssh root@$GTW_IP
 cd /usr/local/wso2
 source env.sh
