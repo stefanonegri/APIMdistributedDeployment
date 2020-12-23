@@ -1,0 +1,8 @@
+ssh root@$DB_IP
+apt update
+apt install mysql-server
+mysql_secure_installation
+enable remote connection (https://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html)
+create users:
+create user 'apim'@'157.90.31.84' identified by 'pwd';
+grant all on *.* to 'apim'@'157.90.31.84';
