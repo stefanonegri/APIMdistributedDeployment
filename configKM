@@ -1,4 +1,4 @@
-scp $HOME_DIR/GTW/deployment_KM.toml root@$KM_IP:/usr/local/wso2
+scp $HOME_DIR/KM/deployment_KM.toml root@$KM_IP:/usr/local/wso2
 scp $HOME_DIR/env.sh root@$KM_IP:/usr/local/wso2
 ssh root@$KM_IP
 cd /usr/local/wso2
